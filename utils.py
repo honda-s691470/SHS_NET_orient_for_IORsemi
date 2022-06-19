@@ -64,7 +64,7 @@ def label_maker(config):
 
 def fig_maker(df_log):
     plt.figure()
-    plt.ylim(0, 2)
+    plt.ylim(0, 5)
     plt.plot(df_log["epoch"], df_log["loss"], color='blue', linestyle='-', label='train_loss')
     plt.plot(df_log["epoch"], df_log["val_loss"], color='green', linestyle='--', label='val_loss')
     plt.plot(df_log["epoch"], df_log["val_acc"], color='orange', linestyle='--', label='val_acc')
