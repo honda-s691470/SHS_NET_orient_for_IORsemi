@@ -69,6 +69,7 @@ def fig_maker(df_log):
     plt.plot(df_log["epoch"], df_log["val_acc"], color='orange', linestyle='--', label='val_acc')
     plt.legend()
     plt.xlabel('epoch')
+    plt.ylim(0, 2)
     plt.ylabel('loss')
     plt.title('Training and validation loss')
     plt.grid()  
