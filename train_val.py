@@ -14,7 +14,7 @@ def train(train_loader, model, criterion, optimizer):
     avg_meters = {'loss': AverageMeter()}
     model.train()
         
-    pbar = tqdm(total=len(train_loader))
+    pbar = total=len(train_loader)
     for input, label, _ in train_loader:
         input = input.cuda()
         labels = label.type(torch.cuda.LongTensor)
